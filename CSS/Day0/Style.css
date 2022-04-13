@@ -1,0 +1,66 @@
+/*通配符*/
+*{
+    /*清除所有元素的边距值和填充值*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+}
+body{
+    background: #e0e0e0;;
+}
+h1{
+    color: #ffa4b2 !important;
+    background: #000000;
+}
+.h1{
+    color: #ff002b !important;
+    background: #3f3f40;
+}
+#h1{
+    color: yellow !important;
+    background: brown;
+}
+div,p,h2{
+    background: #ffa4b2;
+}
+/*后代选择器*/
+div p{
+    background: aqua;
+}
+
+/*伪类选择器
+1. a:link{} 超链接初始
+2.a:visited{} 被访问后状态
+3. a:hover{} 鼠标悬停状态
+4.a:active{} 鼠标按下状态
+*/
+#login{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-width: 0px;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  23px 23px 50px #929292,
+    -23px -23px 50px #ffffff;
+}
+#login:visited{
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: inset 23px 23px 50px #929292,
+    inset -23px -23px 50px #ffffff;
+}
+#login:hover{
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+}
+#login:active{
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+}

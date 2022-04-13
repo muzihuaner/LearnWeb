@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+.con{
+    width: 966px;
+    height: 110px;
+}
+.header{
+    /*background: rgba(15, 178, 227, 0.25);*/
+    margin: 0 auto;
+}
+.logo {
+    display: block;
+    float: left;
+    margin: 15px;
+    width: 86px;
+    height: 20px;
+    background-image: url(https://cloudcache.tencentcs.com/qcloud/portal/kit/images/slice/logo.f0c9ade4.svg);
+}
+.headerright{
+    float: right;
+}
+.headerright ul{
+    height: 44px;
+    margin-top: 10px;
+    line-height: 44px;
+}
+.headerright li{
+    float: left;
+}
+.headerright li a{
+    border-right: 1px solid #b2c7ea;
+    padding: 0 13px;
+    font-size: 13px;
+    text-decoration:none;
+    color: #3f3f40;
+}
+.headerright .last{
+    padding-right: 0;
+    border: 0;
+}
+.headerright li .active{
+    color: #ff0025;
+}
+.search{
+    float: right;
+    height: 28px;
+    width: 234px;
+    border: 1px solid #d1d1d1;
+}
+.search input{
+    border: 0;
+    outline: none;
+}
+.search .left{
+    width: 196px;
+    float: left;
+    height: 28px;
+    padding-left: 14px;
+}
+.search .right{
+    float: right;
+    height:28px;
+    width: 20px;
+    background: url(../img/icon-search.svg) no-repeat center;
+}
+.nav{
+    height: 53px;
+    line-height: 53px;
+    border-top: 1px solid #657588;
+    background: #657588;
+    color: white;
+}
+.nav .con{
+    width: 966px;
+    height: 110px;
+    margin: 0 auto;
+}
+.nav li{
+    float: left;
+    font-size: 16px;
+    margin-right: 76px;
+}
+.banner{
+    height: 328px;
+    background: url("../img/banner1.png") no-repeat center;
+    margin: 0 auto;
+}

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 300px;
+            margin: 0 auto;
+
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .box .item {
+            float: left;
+            width: 148px;
+            border: 1px solid blue;
+            background: blue;
+            color: #f0f0f0;
+            line-height: 40px;
+            text-align: center;
+        }
+
+        .item:hover {
+            background: lightblue;
+        }
+        /* > 子代选择器*/
+        .item>ul{
+            display: none;
+            background: #f0f0f0;
+            color: black;
+        }
+        .item:hover ul{
+            display: block;
+        }
+        .item li:hover{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<ul class="box">
+    <li class="item">视频教程
+        <ul>
+            <li>全部视频教程</li>
+            <li>Java教程</li>
+            <li>Python教程</li>
+            <li>HTML教程</li>
+        </ul>
+    </li>
+    <li class="item">认证考试
+        <ul>
+            <li>全部认证</li>
+            <li>Java认证</li>
+            <li>Python认证</li>
+            <li>HTML认证</li>
+        </ul>
+    </li>
+</ul>
+</body>
+</html>

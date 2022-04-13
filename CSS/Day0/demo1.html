@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<!--    内部样式表-->
+    <style>
+    h1{
+        color: #000000;
+    }
+    </style>
+<!--    外部样式表引入方式1-->
+    <link rel="stylesheet" href="Style.css">
+    <!--    外部样式表引入方式2-->
+    <style type="text/css">
+        @import "Style.css";
+    </style>
+</head>
+<body>
+<!--行内样式-->
+<!--行内>内部>外部-->
+<h1 style="color: #ff002b">你好，世界</h1>
+<h1 class="h1">你好，世界</h1>
+<h1 id="h1">你好，世界</h1>
+
+<div>1111111111</div>
+<p>11111111</p>
+<h2>1111111</h2>
+
+<div>
+    <p>不卡吧</p>
+</div>
+
+<a href="#"><button id="login">登录</button></a>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  <style>
+    .list1{
+      list-style-type: square;
+    /*
+    1.disc 实心圆
+    2.circle 空心圆
+    3.square 实心正方形
+    4. none
+    */
+      list-style-image: url("https://res.wx.qq.com/a/wx_fed/assets/res/NTI4MWU5.ico");
+      /*
+      1.inside 列表内
+      2.outside 列表外
+      */
+      list-style-position: outside;
+    }
+    li{
+      border:1px solid #ff002b ;
+    }
+    .list2{
+      list-style: none url("https://res.wx.qq.com/a/wx_fed/assets/res/NTI4MWU5.ico") inside;
+    }
+  </style>
+</head>
+<body>
+<ul class="list1">
+  <li>11111</li>
+  <li>22222</li>
+  <li>33333</li>
+</ul>
+<ul class="list2">
+  <li>44444</li>
+  <li>55555</li>
+  <li>66666</li>
+</ul>
+</body>
+</html>

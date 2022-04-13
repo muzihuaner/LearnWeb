@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 创建表格 -->
+    <!-- 
+        1.width px 50%(相对于父元素)
+        2.height px 50%(相对于父元素，比如body)
+        3.水平对齐align
+        4.cellspacing 单元格与单元格之间的间距
+        5.cellpadding 单元格与内容之间的空隙
+     -->
+    <table border="3" width="50%" height="500px" 
+    style="border-color: blue;background-color: rgb(255, 255, 255);" align="center"
+    cellspacing="10" cellpadding="30"
+    >
+        <!-- tr表示行 -->
+        <!-- 
+            1.align 文字水平对齐
+            2.valign 垂直对齐 valign="top或middle或bottom"
+         -->
+        <tr bgcolor="orange" height="100px" valign="bottom" align="middle">
+            <!-- td表示单元格 -->
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td  bgcolor="red" align="right" valign="top">3</td>
+            <td>4</td>
+        </tr>
+    </table>
+</body>
+</html>
