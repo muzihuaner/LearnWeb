@@ -17,9 +17,10 @@ ul{
     display: block;
     float: left;
     margin: 15px;
-    width: 86px;
-    height: 20px;
-    background-image: url(https://cloudcache.tencentcs.com/qcloud/portal/kit/images/slice/logo.f0c9ade4.svg);
+    width: 172px;
+    height: 40px;
+    background-size: cover;
+    background:  url(https://cloudcache.tencentcs.com/qcloud/portal/kit/images/slice/logo.f0c9ade4.svg) no-repeat center ;
 }
 .headerright{
     float: right;
@@ -87,6 +88,71 @@ ul{
 }
 .banner{
     height: 328px;
+    width: 996px;
     background: url("../img/banner1.png") no-repeat center;
     margin: 0 auto;
+    margin-top: 10px;
+}
+.list{
+    height: 180px;
+    width: 996px;
+    /*background: #657588;*/
+    margin: 0 auto;
+    margin-top: 51px;
+    margin-bottom: 35px;
+}
+.item{
+    height: 120px;
+    width: 237px;
+    border:1px solid #cccccc;
+    float: left;
+    margin-right: 70px;
+}
+.item p{
+    height: 21px;
+    line-height: 21px;
+    /*padding-left: 28px;*/
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+}
+.item img{
+    display: block;
+}
+.itemlast{
+    margin-right: 0;
+}
+.footer{
+    height: 206px;
+    /*background: #657588;*/
+    border-top: 1px solid #cccccc;
+}
+.footer .foot{
+    width: 966px;
+    margin: 0 auto;
+    /*background: #ffa4b2;*/
+}
+.footer ul{
+    height: 84px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #cccccc;
+    line-height: 28px;
+}
+.footer ul li{
+    width: 210px;
+    padding-left: 30px;
+    font-size: 17px;
+    color: #3f3f40;
+    float: left;
+}
+.footer ul li a{
+    text-decoration: none;
+    color: #3f3f40;
+}
+.slide{
+    margin: 0 auto;
+    height: 61px;
+    line-height: 61px;
+    padding-left: 30px;
 }
