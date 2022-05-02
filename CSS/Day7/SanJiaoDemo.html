@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 600px;
+            height: 40px;
+            line-height: 50px;
+            background: #ffa4b2;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        span {
+            width: 0;
+            height: 0;
+            /*background: white;*/
+            border: 5px solid transparent;
+            border-top: 5px solid #ffffff;
+            display: inline-block;
+            position: relative;
+            top: 2.5px;
+            left: 8px;
+        }
+
+        .item ul {
+            list-style: none;
+            padding: 10px;
+        }
+        .box:hover span {
+            border: 5px solid transparent;
+            border-bottom: 5px solid #ffffff;
+            top: -2.5px;
+        }
+
+        .box .item {
+            float: left;
+            width: 148px;
+            color: #f0f0f0;
+            line-height: 40px;
+            text-align: center;
+
+        }
+
+        .item:hover {
+            background: lightblue;
+        }
+        li{
+
+        }
+        /* > 子代选择器*/
+        .item > ul {
+            display: none;
+            background: lightblue;
+            color: white;
+        }
+
+        .item:hover ul {
+            display: block;
+        }
+
+        .item li:hover {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="item">导航1<span></span>
+        <ul>
+            <li>Java教程</li>
+            <li>Python教程</li>
+            <li>HTML教程</li>
+        </ul>
+    </div>
+    <div class="item">导航2<span></span>
+        <ul>
+            <li>Java教程</li>
+            <li>Python教程</li>
+            <li>HTML教程</li>
+        </ul>
+    </div>
+    <div class="item">导航3<span></span>
+        <ul>
+            <li>Java教程</li>
+            <li>Python教程</li>
+            <li>HTML教程</li>
+        </ul>
+    </div>
+    <div class="item">导航4<span></span>
+        <ul>
+            <li>Java教程</li>
+            <li>Python教程</li>
+            <li>HTML教程</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

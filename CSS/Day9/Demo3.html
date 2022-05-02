@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            height: 100%;
+        }
+        header{
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background: #000000;
+            border-bottom:2px solid white;
+        }
+        footer {
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background: darkorange;
+        }
+
+        header>span>p{
+            font-size: 35px;
+            font-weight: bolder;
+            font-family: "Microsoft YaHei UI";
+            color: white;
+        }
+        header>span>p>b{
+            border-radius: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+            background: orange 10px 0px;
+        }
+        section {
+            height: calc(100% - 100px);
+        }
+
+        nav, aside {
+            width: 100px;
+            height: 100%;
+            background: #3f3f40;
+            float: left;
+        }
+
+        main {
+            float: left;
+            width: calc(100% - 200px);
+            background: #ffffff;
+            height: 100%;
+        }
+        .article1{
+            height: 60%;
+            position: relative;
+        }
+        .article2{
+            height: 40%;
+            position: relative;
+        }
+       nav>figure{
+           font-size: 20px;
+           width: 100%;
+           background: #3f3f40;
+           text-align: center;
+           color: white;
+           font-weight: bold;
+       }
+       ul{
+           margin-top: 20px;
+           margin-left: 10px;
+           width: 100%;
+       }
+       ul>li{
+           border-bottom: 2px solid darkorange;
+       }
+        ul>li>a{
+            font-size: 17px;
+            text-decoration: none;
+            color: white;
+        }
+        .link{
+            text-decoration: none;
+            color: white;
+        }
+        aside{
+            color: white;
+        }
+        .title{
+            font-size: 16px;
+            color: white;
+        }
+        .article1>div{
+            background: url("img.png");
+            width: 100%;
+            height: 84%;
+            background-position: center;
+            background-size: cover;
+        }
+        .article2>div{
+            background: url("img_1.png");
+            width: 100%;
+            height: 70%;
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+<!--头部-->
+<header><span><p>性<b>芝士</b></p></span></header>
+<!--中间-->
+<section>
+    <!--导航栏-->
+    <nav>
+        <figure>首页</figure>
+        <ul>
+            <li><a href="">人类生殖系统</a></li>
+            <li><a href="">性行为</a></li>
+            <li><a href="">性取向</a></li>
+            <li><a href="">避孕与预防性传播疾病</a></li>
+        </ul>
+    </nav>
+    <!--  主页面-->
+    <main>
+        <article class="article1">
+            <header><p class="title">人类生殖系统-Human Reproductive System</p></header>
+            <div></div>
+        </article>
+        <article class="article2">
+            <header><p class="title">性行为-Sexual Activity</p></header>
+            <div></div>
+        </article>
+
+    </main>
+    <!--  侧边栏-->
+    <aside>关于- <b>性芝士</b>
+        <p>性芝士是一个性教育网站，内容适合初中及以上阶段的人群阅读。</p>
+    </aside>
+</section>
+<!--底部-->
+<footer>据<a href="https://flk.npc.gov.cn/detail2.html?ZmY4MDgxODE3OTZhNjM2YTAxNzk4MjJhMTk2NDBjOTI" class="link">《中华人民共和国刑法》</a>第三百六十七条，“<strong style="color: #000;">有关人体生理、医学知识的科学著作不是淫秽物品。</strong></footer>
+</body>
+</html>

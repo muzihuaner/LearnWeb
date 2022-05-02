@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*伪元素*/
+        div::first-letter {
+            font-size: 30px;
+            color: #0e3571;
+        }
+
+        div::first-line {
+            background-color: #ffa4b2;
+        }
+        div::before{
+            content: "The Word：";
+        }
+        div::after{
+            content: "END";
+        }
+    </style>
+</head>
+<body>
+<div>
+    I believe there is a person who brings sunshine into your life. That person may have enough to spread around. But if
+    you really have to wait for someone to bring you the sun and give you a good feeling, then you may have to wait a
+    long time.
+</div>
+</body>
+</html>
