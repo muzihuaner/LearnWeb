@@ -2,11 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>性芝士</title>
     <style>
+        @media screen and (max-width: 673px) {
+            main>article{
+                height: 250px !important;
+            }
+            main>article>img{
+                width: 100%;
+                height: 200px !important;
+            }
+            footer{
+                height: 50px!important;
+                font-size: 8px!important;
+                line-height: 20px!important;
+            }
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -15,13 +29,16 @@
         html, body {
             height: 100%;
         }
-        header{
+
+
+        header {
             height: 50px;
             line-height: 50px;
             text-align: center;
             background: #000000;
-            border-bottom:2px solid white;
+            border-bottom: 2px solid white;
         }
+
         footer {
             height: 50px;
             line-height: 50px;
@@ -29,18 +46,20 @@
             background: darkorange;
         }
 
-        header>span>p{
+        header > span > p {
             font-size: 35px;
             font-weight: bolder;
             font-family: "Microsoft YaHei UI";
             color: white;
         }
-        header>span>p>b{
+
+        header > span > p > b {
             border-radius: 5px;
             padding-left: 5px;
             padding-right: 5px;
             background: orange 10px 0px;
         }
+
         section {
             height: calc(100% - 100px);
         }
@@ -57,58 +76,82 @@
             width: calc(100% - 200px);
             background: #ffffff;
             height: 100%;
+            overflow: auto;
         }
-        .article1{
-            height: 60%;
-            position: relative;
+
+        nav > figure {
+            font-size: 20px;
+            width: 100%;
+            background: #3f3f40;
+            text-align: center;
+            color: white;
+            font-weight: bold;
         }
-        .article2{
-            height: 40%;
-            position: relative;
+
+        ul {
+            margin-top: 20px;
+            margin-left: 10px;
+            width: 100%;
         }
-       nav>figure{
-           font-size: 20px;
-           width: 100%;
-           background: #3f3f40;
-           text-align: center;
-           color: white;
-           font-weight: bold;
-       }
-       ul{
-           margin-top: 20px;
-           margin-left: 10px;
-           width: 100%;
-       }
-       ul>li{
-           border-bottom: 2px solid darkorange;
-       }
-        ul>li>a{
+
+        ul > li {
+            border-bottom: 2px solid darkorange;
+        }
+
+        ul > li > a {
             font-size: 17px;
             text-decoration: none;
             color: white;
         }
-        .link{
+
+        .link {
             text-decoration: none;
             color: white;
         }
-        aside{
+
+        aside {
             color: white;
         }
-        .title{
+
+        .title {
             font-size: 16px;
             color: white;
         }
-        .article1>div{
-            background: url("img.png");
+
+        .article {
             width: 100%;
             height: 84%;
+        }
+
+
+        .item1 {
+            background: url("img.png");
+            width: 100%;
+            height: inherit;
             background-position: center;
             background-size: cover;
         }
-        .article2>div{
+
+        .item2 {
             background: url("img_1.png");
             width: 100%;
-            height: 70%;
+            height: inherit;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .item3 {
+            background: url("img_3.png");
+            width: 100%;
+            height: inherit;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .item4 {
+            background: url("img_2.png");
+            width: 100%;
+            height: inherit;
             background-position: center;
             background-size: cover;
         }
@@ -123,21 +166,29 @@
     <nav>
         <figure>首页</figure>
         <ul>
-            <li><a href="">人类生殖系统</a></li>
-            <li><a href="">性行为</a></li>
-            <li><a href="">性取向</a></li>
-            <li><a href="">避孕与预防性传播疾病</a></li>
+            <li><a href="#Reproductive">人类生殖系统</a></li>
+            <li><a href="#Activity">性行为</a></li>
+            <li><a href="#Orientation">性取向</a></li>
+            <li><a href="#Prevention">避孕与预防性传播疾病</a></li>
         </ul>
     </nav>
     <!--  主页面-->
     <main>
-        <article class="article1">
+        <article class="article" id="Reproductive">
             <header><p class="title">人类生殖系统-Human Reproductive System</p></header>
-            <div></div>
+            <img class="item1">
         </article>
-        <article class="article2">
+        <article class="article" id="Activity">
             <header><p class="title">性行为-Sexual Activity</p></header>
-            <div></div>
+            <img class="item2">
+        </article>
+        <article class="article" id="Orientation">
+            <header><p class="title">性取向-Sexual Orientation</p></header>
+            <img class="item3">
+        </article>
+        <article class="article" id="Prevention">
+            <header><p class="title">避孕与预防性传播疾病-Contraceptive and Prevention of STD</p></header>
+            <img class="item4">
         </article>
 
     </main>
@@ -147,6 +198,7 @@
     </aside>
 </section>
 <!--底部-->
-<footer>据<a href="https://flk.npc.gov.cn/detail2.html?ZmY4MDgxODE3OTZhNjM2YTAxNzk4MjJhMTk2NDBjOTI" class="link">《中华人民共和国刑法》</a>第三百六十七条，“<strong style="color: #000;">有关人体生理、医学知识的科学著作不是淫秽物品。</strong></footer>
+<footer>据<a href="https://flk.npc.gov.cn/detail2.html?ZmY4MDgxODE3OTZhNjM2YTAxNzk4MjJhMTk2NDBjOTI" class="link">《中华人民共和国刑法》</a>第三百六十七条，“<strong
+        style="color: #000;">有关人体生理、医学知识的科学著作不是淫秽物品。</strong></footer>
 </body>
 </html>
