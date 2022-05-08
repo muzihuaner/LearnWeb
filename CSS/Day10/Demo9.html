@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            border: 2px solid black;
+            margin: 100px auto;
+            display: flex;
+            flex-direction: row;
+            /*    row 水平排列
+                  column 垂直排列
+                  row-reverse 水平反向排列
+                  column-reverse 垂直反向排列
+            */
+            /*调整主轴的对齐方向
+            flex-start 左对齐
+            flex-end 右对齐
+            center 居中
+            space-between 两端对齐
+            space-around 距离环绕
+            */
+            justify-content: space-around;
+
+            align-items: flex-start;
+            /*    调整侧轴
+                flex-start 左对齐
+                flex-end 右对齐
+                center 居中
+            */
+            /*换行*/
+            flex-wrap: wrap;
+            /*控制换行后的行间距
+            flex-start 左对齐
+            flex-end 右对齐
+            center 居中
+            space-between 两端对齐
+            space-around 距离环绕
+            */
+            align-content: flex-start;
+        }
+
+        .box div {
+            width: 100px;
+            height: 100px;
+            border: 1px dashed red;
+        }
+
+        .box span {
+            width: 100px;
+            height: 100px;
+            border: 1px dashed red;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div>11111</div>
+    <div>22222</div>
+    <div>33333</div>
+    <div>44444</div>
+    <div>55555</div>
+    <div>66666</div>
+    <div>77777</div>
+    <div>88888</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  <style>
+    :root,body{
+      background: #ffa4b2;
+    }
+    .box{
+      width: 946px;
+      height: 100px;
+      margin: 0 auto;
+      background: #3f3f40;
+    }
+    .box div{
+      float: left;
+      width: 300px;
+      height: 100px;
+      background: darkorange;
+      margin-right: 20px;
+    }
+    /*伪类选择器
+      first-child 第一个
+      last-child 最后一个
+      第几个
+      nth-child(2) 第2个
+      偶数 even 2n
+      nth-child(2n)
+      奇数 odd
+      2n+1  2n-1
+    */
+    .box div:first-child{
+      border: 3px solid #3f3f40 ;
+    }
+    .box div:last-child{
+      margin-right: 0;
+    }
+    .box2{
+      margin-top: 200px;
+      width: 946px;
+      height: 102px;
+      background: #3f3f40;
+    }
+    .box2>div{
+      width: 946px;
+      height: 20px;
+    }
+    .box2>div:nth-child(even){
+      margin-top: 1px;
+      background: darkorange;
+    }
+    .box2>div:nth-child(odd){
+      margin-top: 1px;
+      background: #3f3f40;
+    }
+  </style>
+</head>
+<body>
+<div class="box">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+
+
+
+<div class="box2">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+</body>
+</html>

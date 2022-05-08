@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            border: 2px solid black;
+            margin: 100px auto;
+            display: flex;
+            /*flex-direction: column;*/
+        }
+
+        .box div {
+            width: 100px;
+            height: 100px;
+            border: 1px dashed red;
+            box-sizing: border-box;
+        }
+
+        .box1 {
+            order: 0;
+            height: 100px;
+            /*align-self: flex-start;*/
+        }
+
+        .box2 {
+            height: 100px;
+            /*align-self: flex-end;*/
+        }
+
+        .box3 {
+            order: 1;
+            height: 100px;
+            /*align-self: center;*/
+        }
+
+        .box4 {
+            height: 100px;
+            /*align-self: baseline;*/
+        }
+
+        .box5 {
+            order: -1;
+            /*  占满高度*/
+            /*align-self: stretch;*/
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="box1">11111</div>
+    <div class="box2">22222</div>
+    <div class="box3">33333</div>
+    <div class="box4">44444</div>
+    <div class="box5">55555</div>
+</div>
+</body>
+</html>

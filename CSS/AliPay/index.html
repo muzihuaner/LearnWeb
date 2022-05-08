@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'iconfont';  /* Project id 3385007 */
+            src: url('//at.alicdn.com/t/font_3385007_vqej28kpcm.woff2?t=1652013301833') format('woff2'),
+            url('//at.alicdn.com/t/font_3385007_vqej28kpcm.woff?t=1652013301833') format('woff'),
+            url('//at.alicdn.com/t/font_3385007_vqej28kpcm.ttf?t=1652013301833') format('truetype');
+        }
+
+        .iconfont {
+            font-family: "iconfont" !important;
+            font-size: 16px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 1080px;
+            height: 2160px;
+            background: grey;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            height: 126px;
+            background: #1678ff;
+            display: flex;
+        }
+
+        header > div.tianqi {
+            width: 190px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+
+        header > div.tianqi > p.location {
+            color: #feffff;
+            font-size: 40px;
+        }
+
+        header > div.tianqi > p.wendu {
+            position: relative;
+            top: -45px;
+            color: #feffff;
+            font-size: 23px;
+            color: #93caff;
+        }
+
+        header > span {
+            width: 146px;
+            height: 100px;
+            text-align: center;
+        }
+
+        header > .iconfont {
+            font-size: 67px;
+            position: relative;
+            top: 37px;
+            color: #ffffff;
+        }
+
+        header > div.search {
+            background: #ffffff;
+            height: 98px;
+            flex: 1;
+            margin-top: 25px;
+            margin-bottom: 5px;
+            border-radius: 10px;
+        }
+
+        header > div.search > .iconfont {
+            font-size: 44px;
+            position: relative;
+            /*top: 24px;*/
+            left: 28px;
+            color: #999999;
+        }
+
+        header > div.search > input[type=text] {
+            width: 506px;
+            height: 45px;
+            border: none;
+            outline: none;
+            position: relative;
+            left: 35px;
+            top: -4px;
+            font-size: 39px;
+        }
+
+        header > div.search > input[type=button] {
+            width: 143px;
+            height: 97px;
+            background: #ffffff;
+            font-size: 39px;
+            border: none;
+            color: #1678ff;
+            font-weight: bolder;
+        }
+
+        header > div.search > .line::after {
+            content: '';
+            position: absolute;
+            margin-top: 10px;
+            height: 72px;
+            width: 3px;
+            background-color: #d0e3ff;
+            border-radius: 5px;
+        }
+
+        footer {
+            height: 160px;
+            background: #fafbff;
+        }
+
+        section {
+            flex: 1;
+            background: #f5f5f5;
+        }
+
+        .main {
+            display: flex;
+            height: 228px;
+            background: #1678ff;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .main > div {
+            width: 125px;
+            height: 145px;
+            /*background: #f0f0f0;*/
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .main .iconfont {
+            font-size: 88px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .main .label {
+            font-size: 32px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .list {
+            display: flex;
+            flex-wrap: wrap;
+            background: #f8f8f8;
+        }
+
+        .list > div {
+            width: 20%;
+            height: 190px;
+            /*border: 1px solid grey;*/
+            box-sizing: border-box;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .list div > .iconfont {
+            height: 77px;
+            line-height: 77px;
+            text-align: center;
+            font-size: 55px;
+        }
+
+        .list div > .label {
+            height: 61px;
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .information {
+            position: relative;
+            top: 5px;
+            margin: 0 auto;
+            width: 1006px;
+            height: 200px;
+            background: #ffffff;
+            border-radius: 15px;
+        }
+
+        .information > ul {
+            position: relative;
+            top: 52px;
+            margin-left: 40px;
+            font-size: 30px;
+        }
+        .other1{
+            position: relative;
+            top: 10px;
+            width: 1006px;
+            height: 200px;
+            background: #ffffff;
+            border-radius: 15px;
+            margin: 0 auto;
+            background: url("img/baneer.jpg");
+            background-repeat: no-repeat;
+            /*background-position: center;*/
+            background-size: cover;
+        }
+        .other2{
+            position: relative;
+            top: 20px;
+            width: 1006px;
+            height: 600px;
+            background: #ffffff;
+            border-radius: 15px;
+            margin: 0 auto;
+            background: url("img/yiqing.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        footer{
+            height: 128px;
+            /*background: grey;*/
+            display: flex;
+        }
+        footer div{
+            flex: 1;
+            /*border: 1px solid rebeccapurple;*/
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        footer div.logo{
+            background: url("img/alipay.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        footer>div>.iconfont{
+            height: 66px;
+            line-height: 66px;
+            text-align: center;
+            font-size: 65px;
+            color: #666666;
+        }
+        footer>div>.label{
+            height: 36px;
+            font-size: 26px;
+            line-height: 36px;
+            text-align: center;
+            color: #666666;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <header>
+        <div class="tianqi"><p class="location">晋中</p>
+            <p class="wendu">多云 11℃</p></div>
+        <div class="search">
+            <span class="iconfont">&#xe6d4;</span>
+            <input type="text" placeholder="健康山西">
+            <span class="line"></span>
+            <input type="button" value="搜索">
+        </div>
+        <span class="iconfont">&#xe66c;</span>
+    </header>
+    <section>
+        <div class="main">
+            <div>
+                <span class="iconfont">&#xe68b;</span>
+                <span class="label">扫一扫</span>
+            </div>
+            <div>
+                <span class="iconfont">&#xe691;</span>
+                <span class="label">收付款</span>
+            </div>
+            <div>
+                <span class="iconfont">&#xe68d;</span>
+                <span class="label">出行</span>
+            </div>
+            <div>
+                <span class="iconfont">&#xe68e;</span>
+                <span class="label">卡包</span>
+            </div>
+        </div>
+        <div class="list">
+            <div>
+                <span class="iconfont" style="color: #2b83fe;">&#xe8ca;</span>
+                <span class="label">饿了么</span>
+            </div>
+            <div>
+                <span class="iconfont" style="color: #2b83fe;">&#xe6ab;</span>
+                <span class="label">菜鸟</span>
+            </div>
+            <div>
+                <span class="iconfont" style="color: #fd632f;">&#xe6cc;</span>
+                <span class="label">淘票票</span>
+            </div>
+            <div>
+                <span class="iconfont">&#xe8ca;</span>
+                <span class="label">饿了么</span>
+            </div>
+            <div>
+                <span class="iconfont">&#xe8ca;</span>
+                <span class="label">饿了么</span>
+            </div>
+            <div>
+                <span class="iconfont">&#xe8ca;</span>
+                <span class="label">饿了么</span>
+            </div>
+            <div>
+                <span class="iconfont">&#xe8ca;</span>
+                <span class="label">饿了么</span>
+            </div>
+            <div>
+                <span class="iconfont">&#xe8ca;</span>
+                <span class="label">饿了么</span>
+            </div>
+            <div>
+                <span class="iconfont">&#xe8ca;</span>
+                <span class="label">饿了么</span>
+            </div>
+            <div>
+                <span class="iconfont">&#xe8ca;</span>
+                <span class="label">饿了么</span>
+            </div>
+            <div>
+                <span class="iconfont">&#xe8ca;</span>
+                <span class="label">饿了么</span>
+            </div>
+            <div>
+                <span class="iconfont">&#xe8ca;</span>
+                <span class="label">饿了么</span>
+            </div>
+            <div>
+                <span class="iconfont">&#xe8ca;</span>
+                <span class="label">饿了么</span>
+            </div>
+            <div>
+                <span class="iconfont">&#xe8ca;</span>
+                <span class="label">饿了么</span>
+            </div>
+            <div>
+                <span class="iconfont">&#xe8ca;</span>
+                <span class="label">饿了么</span>
+            </div>
+
+        </div>
+
+        <div class="information">
+            <ul>
+                <li>消息通知1:这是一个通知....</li>
+                <li>消息通知2:这是也一个通知....</li>
+            </ul>
+        </div>
+        <div class="other1">
+
+        </div>
+        <div class="other2">
+
+        </div>
+    </section>
+    <footer>
+        <div class="logo"></div>
+        <div>
+            <span class="iconfont">&#xe6cd;</span>
+            <span class="label">理财</span>
+        </div>
+
+        <div>
+            <span class="iconfont">&#xe6c5;</span>
+            <span class="label">生活</span>
+        </div>
+        <div>
+            <span class="iconfont">&#xe69d;</span>
+            <span class="label">消息</span>
+        </div>
+        <div>
+            <span class="iconfont">&#xe6b1;</span>
+            <span class="label">我的</span>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  <style>
+    .box{
+      width: 500px;
+      height: 500px;
+      border: 2px solid black;
+      margin: 100px auto;
+      display: flex;
+    /*
+    弹性盒
+    1.子元素默认横向排列，
+    2.如果有行内元素会变成块级元素
+    3.只有一个元素 margin: auto; 就可以居中
+    */
+    }
+    .box div{
+      width: 100px;
+      height: 100px;
+      border: 1px dashed red;
+    }
+    .box span{
+      width: 100px;
+      height: 100px;
+      border: 1px dashed red;
+      margin: auto;
+    }
+
+  </style>
+</head>
+<body>
+<!--弹性盒-->
+<div class="box">
+  <span>1111</span>
+<!--  <div>2222</div>-->
+<!--  <div>3333</div>-->
+<!--  <div>4444</div>-->
+</div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*    属性选择器 [class,,]*/
+        div[class] {
+            background: #ffa4b2;
+        }
+
+        p[class] {
+            background: #b2c7ea;
+        }
+
+        /*完全匹配*/
+        /*div[class=box1]{*/
+        /*    border: 3px solid #3f3f40;*/
+        /*}*/
+        /*包含就匹配*/
+        div[class~=box1] {
+            border: 3px solid #3f3f40;
+        }
+
+        /*    模糊匹配*/
+        /*class^=b 开头是b的*/
+        /*class$=b 结尾是b的*/
+        /*class*=b 只要包含b*/
+        div[class^=b]{
+            width: 150px;
+        }
+        div[class$='2']{
+            color: #2267e2;
+        }
+        div[class*='o']{
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="box1">div---1</div>
+<div class="box2">div---2</div>
+<div>div---3</div>
+<div class="box1">div---4</div>
+<div class="box1 box2">div---5</div>
+<p class="p1">p---1</p>
+<p class="p2">p---2</p>
+<p>p---3</p>
+</body>
+</html>

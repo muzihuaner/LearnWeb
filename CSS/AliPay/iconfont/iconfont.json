@@ -1,0 +1,58 @@
+{
+  "id": "3385007",
+  "name": "alipay",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "16617390",
+      "name": "scan",
+      "font_class": "scan",
+      "unicode": "e68b",
+      "unicode_decimal": 59019
+    },
+    {
+      "icon_id": "16617400",
+      "name": "pay",
+      "font_class": "pay",
+      "unicode": "e68c",
+      "unicode_decimal": 59020
+    },
+    {
+      "icon_id": "16617405",
+      "name": "travel",
+      "font_class": "travel",
+      "unicode": "e68d",
+      "unicode_decimal": 59021
+    },
+    {
+      "icon_id": "16617414",
+      "name": "card",
+      "font_class": "card",
+      "unicode": "e68e",
+      "unicode_decimal": 59022
+    },
+    {
+      "icon_id": "16618162",
+      "name": "express",
+      "font_class": "express",
+      "unicode": "e6ab",
+      "unicode_decimal": 59051
+    },
+    {
+      "icon_id": "16619138",
+      "name": "movie",
+      "font_class": "movie",
+      "unicode": "e6cc",
+      "unicode_decimal": 59084
+    },
+    {
+      "icon_id": "16619374",
+      "name": "red packet",
+      "font_class": "redpacket",
+      "unicode": "e6d1",
+      "unicode_decimal": 59089
+    }
+  ]
+}

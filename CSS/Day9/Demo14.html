@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  <style>
+    /*  已应用*/
+    input:enabled{
+      /*background: #cccccc;*/
+    }
+
+    input:disabled{
+      background: #ffa4b2;
+    }
+    /*聚焦*/
+    input:focus{
+      /*background: #a4bbff;*/
+    }
+    input[type=checkbox]{
+    /*  去掉默认样式*/
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border: 1px solid #3f3f40;
+    }
+    input:checked{
+      background: #ff002b;
+    }
+    div{
+      font-weight: bold;
+      font-family: "Microsoft YaHei UI";
+      background: #f1ffe6;
+    }
+    div::selection{
+      background: yellow;
+      color: #3f3f40;
+    }
+  </style>
+</head>
+<body>
+<form action="">
+  用户名 <input type="text"><br>
+  密码 <input type="password"><br>
+  记住用户名 <input type="checkbox"><br>
+  <input type="submit" value="登录" disabled>
+</form>
+
+<div>
+  HTML的全称为超文本标记语言，是一种标记语言。它包括一系列标签．通过这些标签可以将网络上的文档格式统一，使分散的Internet资源连接为一个逻辑整体。HTML文本是由HTML命令组成的描述性文本，HTML命令可以说明文字，图形、动画、声音、表格、链接等。
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        li {
+            list-style: none;
+        }
+
+        .box > li {
+            border: 1px solid #3f3f40;
+        }
+        /*针对兄弟标签*/
+        /*当前tag后面的一个tag*/
+        /*.child+li{*/
+        /*    background: #ffa4b2;*/
+        /*}*/
+        /*   当前tag后面的所有tag */
+        .child~li{
+            background: #ffa4b2;
+        }
+    </style>
+</head>
+<body>
+<ul class="box">
+    <li>1111
+        <ul>
+            <li>1111</li>
+            <li>1111</li>
+            <li>1111</li>
+        </ul>
+    </li>
+    <li class="child">1111</li>
+    <li>1111</li>
+    <li>1111</li>
+</ul>
+</body>
+</html>
