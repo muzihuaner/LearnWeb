@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            height: 44px;
+            background: #43A047;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header > div {
+            width: 60px;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            font-size: 12px;
+            font-weight: bolder;
+        }
+
+        header div:nth-child(1) {
+            border-radius: 12px 0 0 12px;
+            background: #66BB6A;
+            color: white;
+        }
+
+        header div:nth-child(2) {
+            border-radius: 0 12px 12px 0px;
+            background: #C8E6C9;
+            color: grey;
+        }
+
+        section {
+            flex: 1;
+            overflow: auto;
+        }
+
+        section ul {
+            display: flex;
+            position: sticky;
+            top: 0;
+            background: #ffffff;
+        }
+
+        section ul li {
+            flex: 1;
+            text-align: center;
+            height: 35px;
+            line-height: 35px;
+            border-bottom: 1px solid #d9d9d9;
+            color: black;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        section ul li:hover {
+            border-bottom: 2px solid #4CAF50;
+            color: #4CAF50;
+        }
+
+        section .list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        section .list > div {
+            width: 49%;
+            margin-top: 4px;
+            border: 1px solid grey;
+        }
+
+        section .list > div img {
+            width: 100%;
+        }
+
+        section .list > div p {
+            height: 30px;
+            line-height: 30px;
+            font-size: 12px;
+            text-indent: 10px;
+        }
+
+        footer {
+            height: 44px;
+            background: white;
+            color: grey;
+        }
+
+        footer ul {
+            display: flex;
+            height: 100%;
+        }
+
+        footer li {
+            height: 100%;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer li:hover {
+            color: green;
+        }
+
+        footer li i {
+            height: 21px;
+            line-height: 21px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        footer li span {
+            height: 17px;
+            line-height: 17px;
+            font-size: 12px;
+            text-align: center;
+        }
+        footer li:nth-child(3){
+            position: relative;
+        }
+        footer li:nth-child(3) i{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border: 1px solid grey;
+            border-radius: 50%;
+            left: 50%;
+            margin-left: -25px;
+            top: -8px;
+            font-size: 30px;
+            text-align: center;
+            line-height: 50px;
+            background: white;
+        }
+
+
+
+    </style>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_3426151_kirwjj518fp.css">
+</head>
+<body>
+<header>
+    <div>热点</div>
+    <div>关注</div>
+</header>
+<section>
+    <ul>
+        <li>头条</li>
+        <li>教程</li>
+        <li>视频</li>
+    </ul>
+    <div class="list">
+        <div>
+            <img src="images/img0.png" alt="">
+            <p>樱桃小丸子</p>
+        </div>
+        <div>
+            <img src="images/img0.png" alt="">
+            <p>樱桃小丸子</p>
+        </div>
+        <div>
+            <img src="images/img0.png" alt="">
+            <p>樱桃小丸子</p>
+        </div>
+        <div>
+            <img src="images/img0.png" alt="">
+            <p>樱桃小丸子</p>
+        </div>
+        <div>
+            <img src="images/img0.png" alt="">
+            <p>樱桃小丸子</p>
+        </div>
+        <div>
+            <img src="images/img0.png" alt="">
+            <p>樱桃小丸子</p>
+        </div>
+    </div>
+</section>
+<footer>
+    <ul>
+        <li><i class="iconfont icon-shouye"></i><span>首页</span></li>
+
+        <li><i class="iconfont icon-sousuo"></i><span>发现</span></li>
+
+        <li><i class="iconfont icon-xiangji"></i></li>
+        <li><i class="iconfont icon-shequ"></i> <span>我的</span></li>
+
+        <li><i class="iconfont icon-tanhao"></i><span>退出</span></li>
+
+    </ul>
+</footer>
+</body>
+</html>
